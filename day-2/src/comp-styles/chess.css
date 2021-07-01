@@ -1,0 +1,33 @@
+.chess{
+    border: 18px solid black;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.rowx{
+    display: flex;
+    flex-direction: row;
+}
+
+.cellx{
+    height: 26px;
+    width: 26px;
+}
+
+.rowx:nth-child(odd) .cellx:nth-child(odd){
+    background-color: black;
+}
+
+.rowx:nth-child(odd) .cellx:nth-child(even){
+    background-color: white;
+}
+
+.rowx:nth-child(even) .cellx:nth-child(odd){
+    background-color: white;
+}
+
+.rowx:nth-child(even) .cellx:nth-child(even){
+    background-color: black;
+}
