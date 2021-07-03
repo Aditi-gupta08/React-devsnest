@@ -1,0 +1,23 @@
+.card{
+    /* border: 1px solid rgb(70, 66, 66); */
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: auto;
+    box-shadow: 2px 3px 9px -1px #000;
+}
+
+.foodblock{
+    width: 90%;
+    background: #6b8e23;
+    padding: 5px;
+    margin: 6px;
+    border-radius: 5px;
+    box-shadow: 3px 1px 9px -1px #3d581a;
+}
+
+.foodblock h1, .foodblock h2{
+    margin: 20px 2px;
+}
