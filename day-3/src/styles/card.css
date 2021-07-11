@@ -1,7 +1,7 @@
 .card{
     /* border: 1px solid rgb(70, 66, 66); */
-    width: 500px;
-    height: 400px;
+    width: 450px;
+    /* height: 400px; */
     padding: 10px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -12,12 +12,28 @@
 .foodblock{
     width: 90%;
     background: #6b8e23;
-    padding: 5px;
-    margin: 6px;
+    padding: 15px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 3px 1px 9px -1px #3d581a;
+    cursor: pointer;
 }
 
-.foodblock h1, .foodblock h2{
-    margin: 20px 2px;
+.foodblock div{
+    margin: 10px 2px;
+}
+
+.foodblock .div-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foodblock .dlt_btn{
+    height: 25px;
+    padding: 0px 5px;
+}
+
+.foodblock .cautious_txt{
+    color: #950a0ae3;
 }

@@ -1,24 +1,20 @@
 import "../styles/card.css";
+import FoodBlock from "./FoodBlock";
+import { cal_data } from "./data";
+import { useState } from "react";
 
-const  FoodBlock = (props) => {
-    return(
-    <div className="foodblock"> 
-        <h1> {props.title} </h1>
-        <h2> You have consumed {props.cal} cals today </h2>
-    </div>
-    )
-}
 
 const Card = () => {
+
+    let [items, setItems] = useState(cal_data);
+
     return(
         <div className="card">
-            <FoodBlock title="Pizza" cal="56" />
-            <FoodBlock title="Burger" cal="68" />
-            <FoodBlock title="Coke" cal="500" />
-            <FoodBlock title="Browne" cal="180" />
-            <FoodBlock title="Fried Rice" cal="90" />
-            <FoodBlock title="Lassania" cal="200" />
-            <FoodBlock title="Pani Puri" cal="10" />
+            {
+                items.map((food, index) => 
+                <FoodBlock key={index} title={food.title} 
+                cal={food.cal} index={index} items={items} setItems={setItems} /> )
+            }
         </div>
     )
 };
