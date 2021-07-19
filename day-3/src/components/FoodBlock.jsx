@@ -2,9 +2,7 @@ import "../styles/card.css";
 
 const FoodBlock = ({title, cal, index, items, setItems}) => {
     let handleClick = () => {
-        console.log(index);
         let newList = items.filter((el, i) => i!=index);
-        console.log(newList);
         setItems(newList);
     }
 

@@ -1,0 +1,21 @@
+.item{
+    border: 1px solid #cec0c0;
+    border-radius: 4px;
+    padding: 0rem 1rem 1rem 1rem;
+    flex: 1 1 auto;
+    margin: 10px 300px;
+    text-align: left;
+}
+
+.item .editInputs{
+    margin: 20px 0px;
+}
+
+.item .btn-div{
+    display: flex;
+    margin: 0px;
+}
+
+.btn{
+    margin-right: 10px;
+}
